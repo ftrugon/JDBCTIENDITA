@@ -1,7 +1,10 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+fun main() {
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    val product = Product(1, "Smartphone", 999.99f, "The latest smartphone model", "Apple", "Electronics")
+
+    val productId = ProductDAO().createProduct(product)
+
+    println("Product ID: $productId")
+
+
 }
