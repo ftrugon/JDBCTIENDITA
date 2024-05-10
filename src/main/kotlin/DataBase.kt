@@ -13,7 +13,6 @@ object DataBase {
 
     init {
         try {
-            // Asegurarse de que el driver JDBC de MySQL esté disponible
             Class.forName("org.h2.Driver")
         } catch (e: ClassNotFoundException) {
             e.printStackTrace()
